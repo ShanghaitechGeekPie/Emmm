@@ -1,0 +1,90 @@
+*{
+	font-weight: lighter;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: lighter;
+}
+body{
+	overflow-x: hidden;
+}
+
+#top{
+	height: 450px;
+	background: url("/static/image/bg_up.png") center center no-repeat,
+		url("/static/image/bg.jpg") center center no-repeat;
+	background-size: cover;
+}
+#top-menu{
+	margin-top: 10px;
+	color: #DDDDDD;
+}
+#top-menu ul{
+	z-index: 1;
+	position: relative;
+}
+#top-menu #top-menu-list{
+	z-index: 0;
+}
+@media (max-width: 767px) {
+	#top-menu span{
+		color: #DDDDDD;
+		transition: color 0.2s ease-in-out;
+	}
+	#top-menu.active span{
+		color: #121F2D;
+		transition: color 0.3s ease-in-out;
+	}
+	#top-menu #top-menu-list{
+		border-radius: 2px;
+		background: white;
+		position: absolute;
+		margin-left: -15px;
+		max-height: 0px;
+		overflow: hidden;
+		transition: max-height 0.3s ease-in-out;
+	}
+	#top-menu.active #top-menu-list{
+		max-height: 200px;
+		transition: max-height 0.2s ease-in-out;
+	}
+	#top-menu #top-menu-list{
+		width: 100%;
+	}
+	#top-menu-list li{
+		display: block;
+	}
+	#top-menu-list li a{
+		color: #121F2D;
+    	font-style: normal;
+    	width: 100%;
+	}
+}
+#top-menu a{
+	color: #DDDDDD;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: italic;
+}
+#top-logo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0px 3px 5px rgb(0, 0, 0);
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    text-align: center;
+}
+#top-logo h1{
+	font-weight: lighter;
+	color: #DDDDDD;
+    text-align: center;
+}
+
+#footer{
+	border-top: #E0E1E2 solid 1px;
+	margin: 20px 0px 0px 0px;
+	padding: 10px 0px;
+	width: 100%;
+}
+#footer p{
+	color: #121F2D;
+}

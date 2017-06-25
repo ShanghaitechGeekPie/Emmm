@@ -1,0 +1,41 @@
+{% extends "root.tmpl" %}
+
+{% block title %}Overview{% endblock %}
+
+{% block root_css %}
+<link href="css/overview.css" rel="stylesheet">
+{% endblock %}
+
+{% block root_body %}
+
+<div class="container-fluid text-center" id="displayContainer">
+	<div id="hotmapContainer">
+
+		<img src="image/officeBg.jpg">
+	</div>
+</div>
+
+
+<div class="container-fluid text-center" id="controlContainer">
+	<div class="btn-group" role="group" aria-label="...">
+		<button type="button" class="btn btn-info" id="backbtn">
+			<span class="glyphicon glyphicon-backward" aria-hidden="true"></span>
+		</button>
+		<button type="button" class="btn btn-info" id="pausebtn">
+			<span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+		</button>
+		<button type="button" class="btn btn-info" id="playbtn">
+			<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+		</button>
+		<button type="button" class="btn btn-info" id="nextbtn">
+			<span class="glyphicon glyphicon-forward" aria-hidden="true"></span>
+		</button>
+	</div>
+	<p id="timeInd">t = <span>0</span></p>
+</div>
+{% endblock %}
+
+{% block root_js %}
+		<script src="js/heatmap.min.js"></script>
+		<script src="js/overview.js"></script>
+{% endblock %}

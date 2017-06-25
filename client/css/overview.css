@@ -1,0 +1,29 @@
+/*
+* @Author: eastpiger
+* @Date:   2017-06-25 08:30:50
+* @Last Modified by:   eastpiger
+* @Last Modified time: 2017-06-25 13:10:24
+*/
+body {
+	background: #313131;
+}
+nav.navbar {
+	margin-bottom: -53px;
+	background: transparent;
+}
+#displayContainer {
+	background: #313131;
+}
+#hotmapContainer {
+    margin: 0 auto;
+	width: 1100px;
+	height: 667px;
+	text-align: center;
+}
+#controlContainer {
+	margin-top: -53px;
+}
+#timeInd {
+	color: white;
+	line-height: 40px;
+}
